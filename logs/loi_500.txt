@@ -1,0 +1,6 @@
+2026-06-28 08:15:01 POST /api/thanh-toan status=500
+2026-06-28 08:34:07 POST /api/tai-file status=500
+2026-06-28 08:37:18 POST /api/dat-in status=500
+2026-06-28 08:43:40 POST /api/thanh-toan status=500
+2026-06-28 08:49:02 POST /api/thanh-toan status=500
+2026-06-28 08:52:13 POST /api/thanh-toan status=500
