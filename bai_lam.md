@@ -146,14 +146,23 @@ PS C:\Users\User\Downloads\starter-kit\xuong-in-website> get-content ./logs/orde
 ### Lệnh chạy (Windows: nếu dùng Phụ lục 2 thì ghi cả 2 lệnh)
 
 ```shell
-# Ghi lệnh vào đây (xoá dòng này)
+PS C:\Users\User\Downloads\starter-kit\xuong-in-website> get-content
 
 ```
 
 ### Nội dung file logs/tong_hop.txt
 
 ```text
-(Dán nội dung file vào đây – xoá dòng này)
+# Script: tong_hop.ps1
+# Tac gia: Sinh Vien
+# Ngay tao: 11/11/2026
+Write-host "Dang tao bao cao..."
+"=== BAO CAO SU CO WEBSITE ===" > ./logs/tong_hop.txt
+Get-Content ./logs/order_logs | Select-string "status=404" | foreach-Object { $_.Line } >> /logs/tong_hop.txt
+(Get-Content ./logs/order.logs | Select-String "status=500").Count >> ./logs/tong_hop.txt
+Write-Host "Hoan thanh!"
+
+
 
 ```
 
